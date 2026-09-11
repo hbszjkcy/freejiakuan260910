@@ -6,18 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 03 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01",
+        "🇪🇸 西班牙 (Spain) 02",
+        "🇪🇸 西班牙 (Spain) 03",
+        "🇪🇸 西班牙 (Spain) 04",
+        "🇪🇸 西班牙 (Spain) 05"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 03 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01",
+        "🇪🇸 西班牙 (Spain) 02",
+        "🇪🇸 西班牙 (Spain) 03",
+        "🇪🇸 西班牙 (Spain) 04",
+        "🇪🇸 西班牙 (Spain) 05"
       ],
       "url": "https://www.google.com/generate_204"
     },
