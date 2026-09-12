@@ -18,13 +18,6 @@ proxies:
     headers:
       Host: pl2.lckdwn.ru
 - name: 🇵🇱 PL 02
-  type: ss
-  server: 64.176.73.160
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: VJtsgllDDJfNmaTe
-  udp: true
-- name: 🇵🇱 PL 03
   type: vless
   server: 94.183.209.59
   port: 443
@@ -37,20 +30,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.59
-- name: 🇵🇱 PL 04
-  type: vless
-  server: 94.183.209.58
-  port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pl2.lckdwn.ru
-- name: 🇵🇱 PL 05
+- name: 🇵🇱 PL 03
   type: ss
   server: 194.61.121.93
   port: 7538
@@ -65,8 +45,6 @@ proxy-groups:
   - 🇵🇱 PL 01
   - 🇵🇱 PL 02
   - 🇵🇱 PL 03
-  - 🇵🇱 PL 04
-  - 🇵🇱 PL 05
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,7 +53,5 @@ proxy-groups:
   - 🇵🇱 PL 01
   - 🇵🇱 PL 02
   - 🇵🇱 PL 03
-  - 🇵🇱 PL 04
-  - 🇵🇱 PL 05
 rules:
 - MATCH,PROXIES
