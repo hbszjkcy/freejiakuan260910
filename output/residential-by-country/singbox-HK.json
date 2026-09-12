@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 阿联酋 (UAE) 01",
-        "🇦🇪 阿联酋 (UAE) 02",
-        "🇦🇪 阿联酋 (UAE) 03"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 阿联酋 (UAE) 01",
-        "🇦🇪 阿联酋 (UAE) 02",
-        "🇦🇪 阿联酋 (UAE) 03"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
       ],
       "url": "https://www.google.com/generate_204"
     },
