@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 CL 01"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 CL 01"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
       ],
       "url": "https://www.google.com/generate_204"
     },
