@@ -39,7 +39,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 192.145.31.5
+  servername: neth9.lunariai.ru
 proxy-groups:
 - name: PROXIES
   type: select

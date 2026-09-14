@@ -19,20 +19,6 @@ proxies:
     headers:
       Host: sb2.hat.onl
 - name: 🇷🇺 俄罗斯 (Russia) 02
-  type: vless
-  server: 78.159.247.246
-  port: 443
-  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sb2.hat.onl
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: sb2.hat.onl
-- name: 🇷🇺 俄罗斯 (Russia) 03
   type: ss
   server: 46.17.42.166
   port: 50111
@@ -46,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01
   - 🇷🇺 俄罗斯 (Russia) 02
-  - 🇷🇺 俄罗斯 (Russia) 03
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01
   - 🇷🇺 俄罗斯 (Russia) 02
-  - 🇷🇺 俄罗斯 (Russia) 03
 rules:
 - MATCH,PROXIES
