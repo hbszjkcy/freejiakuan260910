@@ -6,22 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG 01",
-        "🇧🇬 BG 02",
-        "🇧🇬 BG 03",
-        "🇧🇬 BG 04",
-        "🇧🇬 BG 05"
+        "🇹🇷 土耳其 (Turkey) 01",
+        "🇹🇷 土耳其 (Turkey) 02",
+        "🇹🇷 土耳其 (Turkey) 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG 01",
-        "🇧🇬 BG 02",
-        "🇧🇬 BG 03",
-        "🇧🇬 BG 04",
-        "🇧🇬 BG 05"
+        "🇹🇷 土耳其 (Turkey) 01",
+        "🇹🇷 土耳其 (Turkey) 02",
+        "🇹🇷 土耳其 (Turkey) 03"
       ],
       "url": "https://www.google.com/generate_204"
     },
