@@ -4,10 +4,10 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 TH 01
+- name: 🇸🇪 SE 01
   type: vless
-  server: 103.137.22.71
-  port: 443
+  server: 84.32.217.120
+  port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -15,37 +15,20 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /register?ed=2560
+    path: /channels/act
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇹🇭 TH 02
-  type: vmess
-  server: 118.193.57.167
-  port: 49667
-  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /d46bf492
-    headers:
-      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 TH 01
-  - 🇹🇭 TH 02
+  - 🇸🇪 SE 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 TH 01
-  - 🇹🇭 TH 02
+  - 🇸🇪 SE 01
 rules:
 - MATCH,PROXIES
