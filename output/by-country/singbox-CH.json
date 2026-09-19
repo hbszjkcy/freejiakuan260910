@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇭 CH 01",
+        "🇨🇭 CH 02",
+        "🇨🇭 CH 03",
+        "🇨🇭 CH 04",
+        "🇨🇭 CH 05"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇭 CH 01",
+        "🇨🇭 CH 02",
+        "🇨🇭 CH 03",
+        "🇨🇭 CH 04",
+        "🇨🇭 CH 05"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

@@ -6,16 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽)",
-        "🇺🇸 美国 (United States) 02 (家宽)"
+        "🇧🇪 BE 01",
+        "🇧🇪 BE 02",
+        "🇧🇪 BE 03",
+        "🇧🇪 BE 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽)",
-        "🇺🇸 美国 (United States) 02 (家宽)"
+        "🇧🇪 BE 01",
+        "🇧🇪 BE 02",
+        "🇧🇪 BE 03",
+        "🇧🇪 BE 04"
       ],
       "url": "https://www.google.com/generate_204"
     },
