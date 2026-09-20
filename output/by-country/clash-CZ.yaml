@@ -6,83 +6,33 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01
   type: vless
-  server: 104.18.46.46
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 172.67.220.34
+  port: 443
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tlssecurity=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 02
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 03
-  type: vless
-  server: 162.159.43.187
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 04
-  type: vless
-  server: 172.64.158.146
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 05
-  type: vless
-  server: 162.159.45.19
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: INDEX.Arcane509.Workers.DEV
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 06
+      Host: index.arcane509.workers.dev
+- name: 🇨🇿 CZ 02
   type: vless
-  server: 172.64.229.170
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 172.67.182.245
+  port: 443
+  uuid: 96e341a7-3077-4613-b482-41bd9c90cc4d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: eZaCCesS-proJEcT-4C7950.Ez-dC9bBB.WorKErs.dEV
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 07
+      Host: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
+- name: 🇨🇿 CZ 03
   type: vless
   server: 195.85.23.45
   port: 443
@@ -96,6 +46,19 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 04
+  type: vless
+  server: chat.openai.com
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime29.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -105,9 +68,6 @@ proxy-groups:
   - 🇨🇿 CZ 02
   - 🇨🇿 CZ 03
   - 🇨🇿 CZ 04
-  - 🇨🇿 CZ 05
-  - 🇨🇿 CZ 06
-  - 🇨🇿 CZ 07
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -117,8 +77,5 @@ proxy-groups:
   - 🇨🇿 CZ 02
   - 🇨🇿 CZ 03
   - 🇨🇿 CZ 04
-  - 🇨🇿 CZ 05
-  - 🇨🇿 CZ 06
-  - 🇨🇿 CZ 07
 rules:
 - MATCH,PROXIES
