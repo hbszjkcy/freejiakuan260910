@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇻🇳 VN 01",
+        "🇻🇳 VN 02",
+        "🇻🇳 VN 03",
+        "🇻🇳 VN 04",
+        "🇻🇳 VN 05"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇻🇳 VN 01",
+        "🇻🇳 VN 02",
+        "🇻🇳 VN 03",
+        "🇻🇳 VN 04",
+        "🇻🇳 VN 05"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
