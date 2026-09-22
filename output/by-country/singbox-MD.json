@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01"
+        "🇲🇩 MD 01",
+        "🇲🇩 MD 02",
+        "🇲🇩 MD 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01"
+        "🇲🇩 MD 01",
+        "🇲🇩 MD 02",
+        "🇲🇩 MD 03"
       ],
       "url": "https://www.google.com/generate_204"
     },
