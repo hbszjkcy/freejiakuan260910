@@ -6,36 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 TH 01",
-        "🇹🇭 TH 02",
-        "🇹🇭 TH 03",
-        "🇹🇭 TH 04",
-        "🇹🇭 TH 05",
-        "🇹🇭 TH 06",
-        "🇹🇭 TH 07",
-        "🇹🇭 TH 08",
-        "🇹🇭 TH 09",
-        "🇹🇭 TH 10",
-        "🇹🇭 TH 11",
-        "🇹🇭 TH 12"
+        "🇹🇭 TH 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 TH 01",
-        "🇹🇭 TH 02",
-        "🇹🇭 TH 03",
-        "🇹🇭 TH 04",
-        "🇹🇭 TH 05",
-        "🇹🇭 TH 06",
-        "🇹🇭 TH 07",
-        "🇹🇭 TH 08",
-        "🇹🇭 TH 09",
-        "🇹🇭 TH 10",
-        "🇹🇭 TH 11",
-        "🇹🇭 TH 12"
+        "🇹🇭 TH 01"
       ],
       "url": "https://www.google.com/generate_204"
     },

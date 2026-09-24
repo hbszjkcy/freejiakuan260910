@@ -6,38 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01",
-        "🇦🇺 澳大利亚 (Australia) 02",
-        "🇦🇺 澳大利亚 (Australia) 03",
-        "🇦🇺 澳大利亚 (Australia) 04",
-        "🇦🇺 澳大利亚 (Australia) 05",
-        "🇦🇺 澳大利亚 (Australia) 06",
-        "🇦🇺 澳大利亚 (Australia) 07",
-        "🇦🇺 澳大利亚 (Australia) 08",
-        "🇦🇺 澳大利亚 (Australia) 09",
-        "🇦🇺 澳大利亚 (Australia) 10",
-        "🇦🇺 澳大利亚 (Australia) 11",
-        "🇦🇺 澳大利亚 (Australia) 12",
-        "🇦🇺 澳大利亚 (Australia) 13"
+        "🇦🇺 澳大利亚 (Australia) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01",
-        "🇦🇺 澳大利亚 (Australia) 02",
-        "🇦🇺 澳大利亚 (Australia) 03",
-        "🇦🇺 澳大利亚 (Australia) 04",
-        "🇦🇺 澳大利亚 (Australia) 05",
-        "🇦🇺 澳大利亚 (Australia) 06",
-        "🇦🇺 澳大利亚 (Australia) 07",
-        "🇦🇺 澳大利亚 (Australia) 08",
-        "🇦🇺 澳大利亚 (Australia) 09",
-        "🇦🇺 澳大利亚 (Australia) 10",
-        "🇦🇺 澳大利亚 (Australia) 11",
-        "🇦🇺 澳大利亚 (Australia) 12",
-        "🇦🇺 澳大利亚 (Australia) 13"
+        "🇦🇺 澳大利亚 (Australia) 01"
       ],
       "url": "https://www.google.com/generate_204"
     },

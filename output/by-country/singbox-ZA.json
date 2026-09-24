@@ -6,18 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 CY 01",
-        "🇨🇾 CY 02",
-        "🇨🇾 CY 03"
+        "🇿🇦 ZA 01",
+        "🇿🇦 ZA 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY 01",
-        "🇨🇾 CY 02",
-        "🇨🇾 CY 03"
+        "🇿🇦 ZA 01",
+        "🇿🇦 ZA 02"
       ],
       "url": "https://www.google.com/generate_204"
     },
