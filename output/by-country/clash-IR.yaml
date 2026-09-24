@@ -4,26 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇺 澳大利亚 (Australia) 01
+- name: 🇮🇷 IR 01
   type: vless
-  server: 172.105.169.70
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: g2.haxat.bestvbest.ir
+  port: 20610
+  uuid: 8ec5d86b-d895-477d-bc96-21fa01049f2f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 172.105.169.70
+  reality-opts:
+    public-key: lcXIrYi2o8yXrYHR321qQ--5lqVT8a6TKbaGpYTq4CI
+  servername: cdn-apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇺 澳大利亚 (Australia) 01
+  - 🇮🇷 IR 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 (Australia) 01
+  - 🇮🇷 IR 01
 rules:
 - MATCH,PROXIES
