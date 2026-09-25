@@ -4,25 +4,20 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 SC 01
+- name: 🇪🇪 EE 01
   type: vless
-  server: 154.211.8.227
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: proxy-34l.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-34l.pages.dev
-- name: 🇸🇨 SC 02
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 02
   type: vless
-  server: 154.197.75.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: false
   skip-cert-verify: true
@@ -30,20 +25,20 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime37.workers.dev
+      Host: 94.183.170.135
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 SC 01
-  - 🇸🇨 SC 02
+  - 🇪🇪 EE 01
+  - 🇪🇪 EE 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 SC 01
-  - 🇸🇨 SC 02
+  - 🇪🇪 EE 01
+  - 🇪🇪 EE 02
 rules:
 - MATCH,PROXIES
