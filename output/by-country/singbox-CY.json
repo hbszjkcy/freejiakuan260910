@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇾 CY 01",
+        "🇨🇾 CY 02",
+        "🇨🇾 CY 03",
+        "🇨🇾 CY 04",
+        "🇨🇾 CY 05",
+        "🇨🇾 CY 06",
+        "🇨🇾 CY 07",
+        "🇨🇾 CY 08",
+        "🇨🇾 CY 09",
+        "🇨🇾 CY 10",
+        "🇨🇾 CY 11"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇾 CY 01",
+        "🇨🇾 CY 02",
+        "🇨🇾 CY 03",
+        "🇨🇾 CY 04",
+        "🇨🇾 CY 05",
+        "🇨🇾 CY 06",
+        "🇨🇾 CY 07",
+        "🇨🇾 CY 08",
+        "🇨🇾 CY 09",
+        "🇨🇾 CY 10",
+        "🇨🇾 CY 11"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
