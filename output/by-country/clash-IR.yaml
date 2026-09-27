@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01
+- name: 🇮🇷 IR 01
   type: vless
-  server: 172.67.145.5
-  port: 443
-  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
+  server: freeman.curtvip.ir
+  port: 20410
+  uuid: 442581ff-646e-4e99-af3e-a9d9a636a44b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: netra-85a0ca.shoameni19.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui
-    headers:
-      Host: netra-85a0ca.shoameni19.workers.dev
+  reality-opts:
+    public-key: BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI
+  servername: secureconnect-pa.mtls.clients6.google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01
+  - 🇮🇷 IR 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01
+  - 🇮🇷 IR 01
 rules:
 - MATCH,PROXIES
