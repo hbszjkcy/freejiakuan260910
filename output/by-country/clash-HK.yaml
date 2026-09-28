@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
   type: ss
-  server: sth.free-outline.giize.com
-  port: 1081
-  cipher: chacha20-ietf-poly1305
-  password: fv5k24ox05vzkwt3
+  server: 212.192.12.11
+  port: 8388
+  cipher: aes-256-gcm
+  password: WqE61ZpAXu2fU3zN
   udp: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02
   type: vmess
@@ -29,10 +29,17 @@ proxies:
       Host: aksai.org
 - name: 🇭🇰 中国香港 (Hong Kong) 03
   type: ss
-  server: 212.192.12.11
-  port: 8388
-  cipher: aes-256-gcm
-  password: WqE61ZpAXu2fU3zN
+  server: 191.223.214.11
+  port: 8444
+  cipher: aes-128-gcm
+  password: f58002e7-a822-4186-9a07-91de2ab3b311
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  type: ss
+  server: sth.free-outline.giize.com
+  port: 1081
+  cipher: chacha20-ietf-poly1305
+  password: fv5k24ox05vzkwt3
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -42,6 +49,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
   - 🇭🇰 中国香港 (Hong Kong) 03
+  - 🇭🇰 中国香港 (Hong Kong) 04
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +58,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
   - 🇭🇰 中国香港 (Hong Kong) 03
+  - 🇭🇰 中国香港 (Hong Kong) 04
 rules:
 - MATCH,PROXIES
