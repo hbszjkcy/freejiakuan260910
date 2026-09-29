@@ -14,41 +14,27 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: aksai.org
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: ''
+      Host: aksai.org
 - name: 🇭🇰 中国香港 (Hong Kong) 02
-  type: vmess
-  server: 47.83.207.148
+  type: vless
+  server: 103.71.23.247
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  servername: hk.152568.xyz
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /cdn/packages/runtime-core.tar.gz
     headers:
-      Host: vah4urdzl3jdx5r2.v.3dns.vip
+      Host: hk.152568.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 03
-  type: vless
-  server: 47.238.210.5
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-  servername: tesla.com
-  client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 04
   type: vmess
   server: 194.99.79.26
   port: 443
@@ -58,13 +44,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: ''
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: aksai.org
-- name: 🇭🇰 中国香港 (Hong Kong) 05
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 04
   type: vless
   server: 85.149.211.28
   port: 8443
@@ -78,7 +64,7 @@ proxies:
     path: /cdn/packages/runtime-core.tar.gz
     headers:
       Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 06
+- name: 🇭🇰 中国香港 (Hong Kong) 05
   type: vless
   server: 103.71.23.247
   port: 443
@@ -102,7 +88,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03
   - 🇭🇰 中国香港 (Hong Kong) 04
   - 🇭🇰 中国香港 (Hong Kong) 05
-  - 🇭🇰 中国香港 (Hong Kong) 06
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -113,6 +98,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03
   - 🇭🇰 中国香港 (Hong Kong) 04
   - 🇭🇰 中国香港 (Hong Kong) 05
-  - 🇭🇰 中国香港 (Hong Kong) 06
 rules:
 - MATCH,PROXIES
