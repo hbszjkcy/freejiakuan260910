@@ -5,6 +5,85 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01
+  type: vless
+  server: 104.21.64.247
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 02
+  type: vless
+  server: 188.114.97.6
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 03
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /?Telegram---V2ray_confiig
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 04
+  type: vless
+  server: 104.21.91.244
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 05
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 06
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome?ed#?ed=512
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 07
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -14,34 +93,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 02
-  type: ss
-  server: 149.22.95.183
+- name: 🇨🇦 加拿大 (Canada) 08
+  type: vless
+  server: 188.114.97.6
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 03
-  type: vmess
-  server: 134.195.198.214
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 04
-  type: vmess
-  server: 134.195.198.214
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 05
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: //?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 09
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -52,59 +118,19 @@ proxies:
   reality-opts:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 06
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 07
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 10
   type: ss
   server: 51.79.85.185
   port: 8118
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 08
+- name: 🇨🇦 加拿大 (Canada) 11
   type: vmess
   server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 09
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 10
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 11
-  type: vmess
-  server: 134.195.198.214
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
@@ -112,23 +138,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 12
   type: vmess
-  server: mygptagent.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mygptagent.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mygptagent.org
-- name: 🇨🇦 加拿大 (Canada) 13
-  type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -136,9 +146,23 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 13
+  type: vless
+  server: 104.21.222.59
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 14
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -147,63 +171,20 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 15
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 16
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 17
-  type: ss
-  server: yyz-ca-01.blncvpn4u.cc
-  port: 9443
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 18
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 19
-  type: vmess
-  server: 134.195.198.214
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 20
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 21
   type: vmess
   server: 198.57.27.190
   port: 22324
@@ -213,28 +194,44 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 22
+- name: 🇨🇦 加拿大 (Canada) 17
   type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  server: 104.21.110.102
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 23
-  type: ss
-  server: 15.235.75.71
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: FD3rCuOsxOay
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 18
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 24
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇨🇦 加拿大 (Canada) 19
+  type: ss
+  server: yyz-ca-01.blncvpn4u.cc
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 20
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -242,11 +239,56 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 21
+  type: vless
+  server: 104.21.64.247
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 22
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 23
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 24
+  type: vmess
+  server: 134.195.198.214
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 25
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 134.195.198.214
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
@@ -263,16 +305,40 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 27
-  type: vmess
-  server: 158.51.121.63
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=512
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 28
+  type: ss
+  server: 15.235.75.71
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: FD3rCuOsxOay
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 29
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 28
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: 571x2.r4bn.bim.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 30
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -282,9 +348,22 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 29
+- name: 🇨🇦 加拿大 (Canada) 31
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 32
   type: vmess
-  server: 158.51.123.42
+  server: 134.195.198.214
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
@@ -292,9 +371,19 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 30
+- name: 🇨🇦 加拿大 (Canada) 33
+  type: vmess
+  server: 158.51.121.63
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 34
   type: vless
-  server: 104.21.201.219
+  server: 104.21.91.244
   port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
@@ -306,7 +395,176 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇨🇦 加拿大 (Canada) 31
+- name: 🇨🇦 加拿大 (Canada) 35
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 571x2.r4bn.bim.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 36
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇨🇦 加拿大 (Canada) 37
+  type: vless
+  server: 104.21.91.244
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /?ed#Telegram---Always_connected_1---Always_connected_1---Always_connected_1---Always_connected_1
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 38
+  type: vless
+  server: 104.21.69.30
+  port: 443
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 05agj.gkef.zhs.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560fp=chrome
+    headers:
+      Host: 05agj.gkef.zhs.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 39
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 40
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 41
+  type: ss
+  server: 185.156.47.97
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 42
+  type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 43
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=512
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 44
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇨🇦 加拿大 (Canada) 45
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 46
+  type: vmess
+  server: 134.195.198.214
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 47
+  type: vmess
+  server: 198.57.27.190
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 48
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM-----TOOTFFARANGI
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 49
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -316,7 +574,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 32
+- name: 🇨🇦 加拿大 (Canada) 50
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome?ed#Telegram---mtmvpn---mtmvpn---mtmvpn---mtmvpn?ed=512
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 51
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -328,7 +600,163 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 33
+- name: 🇨🇦 加拿大 (Canada) 52
+  type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 53
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 54
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇨🇦 加拿大 (Canada) 55
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 56
+  type: vmess
+  server: 158.51.121.63
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 57
+  type: ss
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 58
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 59
+  type: vless
+  server: 104.21.55.18
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 60
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇨🇦 加拿大 (Canada) 61
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /?Telegram---mtmvpn---mtmvpn---mtmvpn---mtmvpn
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 62
+  type: vmess
+  server: 158.51.121.63
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 63
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇨🇦 加拿大 (Canada) 64
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 65
   type: vless
   server: 148.113.196.75
   port: 8443
@@ -342,7 +770,7 @@ proxies:
     path: /vless/
     headers:
       Host: 148.113.196.75
-- name: 🇨🇦 加拿大 (Canada) 34
+- name: 🇨🇦 加拿大 (Canada) 66
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -352,26 +780,69 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 35
+- name: 🇨🇦 加拿大 (Canada) 67
+  type: ss
+  server: 15.235.75.71
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: FD3rCuOsxOay
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 68
+  type: vless
+  server: 188.114.97.6
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 69
   type: vmess
-  server: 198.57.27.190
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 36
-  type: vmess
-  server: 158.51.121.63
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 70
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: a0hbm.jvb1.28f.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 71
+  type: vless
+  server: 188.114.97.6
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 72
+  type: ss
+  server: 51.79.49.116
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -413,6 +884,42 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 34
   - 🇨🇦 加拿大 (Canada) 35
   - 🇨🇦 加拿大 (Canada) 36
+  - 🇨🇦 加拿大 (Canada) 37
+  - 🇨🇦 加拿大 (Canada) 38
+  - 🇨🇦 加拿大 (Canada) 39
+  - 🇨🇦 加拿大 (Canada) 40
+  - 🇨🇦 加拿大 (Canada) 41
+  - 🇨🇦 加拿大 (Canada) 42
+  - 🇨🇦 加拿大 (Canada) 43
+  - 🇨🇦 加拿大 (Canada) 44
+  - 🇨🇦 加拿大 (Canada) 45
+  - 🇨🇦 加拿大 (Canada) 46
+  - 🇨🇦 加拿大 (Canada) 47
+  - 🇨🇦 加拿大 (Canada) 48
+  - 🇨🇦 加拿大 (Canada) 49
+  - 🇨🇦 加拿大 (Canada) 50
+  - 🇨🇦 加拿大 (Canada) 51
+  - 🇨🇦 加拿大 (Canada) 52
+  - 🇨🇦 加拿大 (Canada) 53
+  - 🇨🇦 加拿大 (Canada) 54
+  - 🇨🇦 加拿大 (Canada) 55
+  - 🇨🇦 加拿大 (Canada) 56
+  - 🇨🇦 加拿大 (Canada) 57
+  - 🇨🇦 加拿大 (Canada) 58
+  - 🇨🇦 加拿大 (Canada) 59
+  - 🇨🇦 加拿大 (Canada) 60
+  - 🇨🇦 加拿大 (Canada) 61
+  - 🇨🇦 加拿大 (Canada) 62
+  - 🇨🇦 加拿大 (Canada) 63
+  - 🇨🇦 加拿大 (Canada) 64
+  - 🇨🇦 加拿大 (Canada) 65
+  - 🇨🇦 加拿大 (Canada) 66
+  - 🇨🇦 加拿大 (Canada) 67
+  - 🇨🇦 加拿大 (Canada) 68
+  - 🇨🇦 加拿大 (Canada) 69
+  - 🇨🇦 加拿大 (Canada) 70
+  - 🇨🇦 加拿大 (Canada) 71
+  - 🇨🇦 加拿大 (Canada) 72
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -454,5 +961,41 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 34
   - 🇨🇦 加拿大 (Canada) 35
   - 🇨🇦 加拿大 (Canada) 36
+  - 🇨🇦 加拿大 (Canada) 37
+  - 🇨🇦 加拿大 (Canada) 38
+  - 🇨🇦 加拿大 (Canada) 39
+  - 🇨🇦 加拿大 (Canada) 40
+  - 🇨🇦 加拿大 (Canada) 41
+  - 🇨🇦 加拿大 (Canada) 42
+  - 🇨🇦 加拿大 (Canada) 43
+  - 🇨🇦 加拿大 (Canada) 44
+  - 🇨🇦 加拿大 (Canada) 45
+  - 🇨🇦 加拿大 (Canada) 46
+  - 🇨🇦 加拿大 (Canada) 47
+  - 🇨🇦 加拿大 (Canada) 48
+  - 🇨🇦 加拿大 (Canada) 49
+  - 🇨🇦 加拿大 (Canada) 50
+  - 🇨🇦 加拿大 (Canada) 51
+  - 🇨🇦 加拿大 (Canada) 52
+  - 🇨🇦 加拿大 (Canada) 53
+  - 🇨🇦 加拿大 (Canada) 54
+  - 🇨🇦 加拿大 (Canada) 55
+  - 🇨🇦 加拿大 (Canada) 56
+  - 🇨🇦 加拿大 (Canada) 57
+  - 🇨🇦 加拿大 (Canada) 58
+  - 🇨🇦 加拿大 (Canada) 59
+  - 🇨🇦 加拿大 (Canada) 60
+  - 🇨🇦 加拿大 (Canada) 61
+  - 🇨🇦 加拿大 (Canada) 62
+  - 🇨🇦 加拿大 (Canada) 63
+  - 🇨🇦 加拿大 (Canada) 64
+  - 🇨🇦 加拿大 (Canada) 65
+  - 🇨🇦 加拿大 (Canada) 66
+  - 🇨🇦 加拿大 (Canada) 67
+  - 🇨🇦 加拿大 (Canada) 68
+  - 🇨🇦 加拿大 (Canada) 69
+  - 🇨🇦 加拿大 (Canada) 70
+  - 🇨🇦 加拿大 (Canada) 71
+  - 🇨🇦 加拿大 (Canada) 72
 rules:
 - MATCH,PROXIES

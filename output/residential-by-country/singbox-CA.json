@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01",
-        "🇮🇪 IE 02"
+        "🇨🇦 加拿大 (Canada) 01 (家宽)",
+        "🇨🇦 加拿大 (Canada) 02 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01",
-        "🇮🇪 IE 02"
+        "🇨🇦 加拿大 (Canada) 01 (家宽)",
+        "🇨🇦 加拿大 (Canada) 02 (家宽)"
       ],
       "url": "https://www.google.com/generate_204"
     },
