@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇬 KG 01",
+        "🇰🇬 KG 02",
+        "🇰🇬 KG 03",
+        "🇰🇬 KG 04",
+        "🇰🇬 KG 05",
+        "🇰🇬 KG 06",
+        "🇰🇬 KG 07",
+        "🇰🇬 KG 08"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇬 KG 01",
+        "🇰🇬 KG 02",
+        "🇰🇬 KG 03",
+        "🇰🇬 KG 04",
+        "🇰🇬 KG 05",
+        "🇰🇬 KG 06",
+        "🇰🇬 KG 07",
+        "🇰🇬 KG 08"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
