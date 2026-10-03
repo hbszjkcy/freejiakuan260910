@@ -6,14 +6,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽)"
+        "🇧🇾 BY 01",
+        "🇧🇾 BY 02",
+        "🇧🇾 BY 03",
+        "🇧🇾 BY 04",
+        "🇧🇾 BY 05",
+        "🇧🇾 BY 06",
+        "🇧🇾 BY 07"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽)"
+        "🇧🇾 BY 01",
+        "🇧🇾 BY 02",
+        "🇧🇾 BY 03",
+        "🇧🇾 BY 04",
+        "🇧🇾 BY 05",
+        "🇧🇾 BY 06",
+        "🇧🇾 BY 07"
       ],
       "url": "https://www.google.com/generate_204"
     },
