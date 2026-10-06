@@ -5,23 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01
-  type: vless
-  server: 80.96.113.48
+  type: ss
+  server: 45.207.207.25
   port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  cipher: aes-256-gcm
+  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
-  network: ws
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
 - name: 🇸🇨 SC 02
   type: vless
-  server: 172.64.154.8
-  port: 2052
+  server: 172.64.32.108
+  port: 80
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -33,7 +26,7 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇨 SC 03
   type: vless
-  server: 108.162.198.178
+  server: 172.64.154.8
   port: 2095
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -44,26 +37,6 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 04
-  type: vless
-  server: 172.64.53.55
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 SC 05
-  type: ss
-  server: 45.207.207.25
-  port: 443
-  cipher: aes-256-gcm
-  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,8 +45,6 @@ proxy-groups:
   - 🇸🇨 SC 01
   - 🇸🇨 SC 02
   - 🇸🇨 SC 03
-  - 🇸🇨 SC 04
-  - 🇸🇨 SC 05
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -82,7 +53,5 @@ proxy-groups:
   - 🇸🇨 SC 01
   - 🇸🇨 SC 02
   - 🇸🇨 SC 03
-  - 🇸🇨 SC 04
-  - 🇸🇨 SC 05
 rules:
 - MATCH,PROXIES
