@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01"
+        "🇷🇺 俄罗斯 (Russia) 01",
+        "🇷🇺 俄罗斯 (Russia) 02",
+        "🇷🇺 俄罗斯 (Russia) 03",
+        "🇷🇺 俄罗斯 (Russia) 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01"
+        "🇷🇺 俄罗斯 (Russia) 01",
+        "🇷🇺 俄罗斯 (Russia) 02",
+        "🇷🇺 俄罗斯 (Russia) 03",
+        "🇷🇺 俄罗斯 (Russia) 04"
       ],
       "url": "https://www.google.com/generate_204"
     },
