@@ -6,14 +6,28 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01"
+        "🇱🇰 LK 01",
+        "🇱🇰 LK 02",
+        "🇱🇰 LK 03",
+        "🇱🇰 LK 04",
+        "🇱🇰 LK 05",
+        "🇱🇰 LK 06",
+        "🇱🇰 LK 07",
+        "🇱🇰 LK 08"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01"
+        "🇱🇰 LK 01",
+        "🇱🇰 LK 02",
+        "🇱🇰 LK 03",
+        "🇱🇰 LK 04",
+        "🇱🇰 LK 05",
+        "🇱🇰 LK 06",
+        "🇱🇰 LK 07",
+        "🇱🇰 LK 08"
       ],
       "url": "https://www.google.com/generate_204"
     },
