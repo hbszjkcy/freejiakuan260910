@@ -6,7 +6,15 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01
   type: vless
-  server: sino.bestsellers1.site
+  server: 77.221.157.213
+  port: 10443
+  uuid: 1d006ad5-1de1-4520-a5f4-875dae1b0a5d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 02
+  type: vless
+  server: 91.107.247.173
   port: 2083
   uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   udp: true
@@ -17,43 +25,22 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 02
-  type: vless
-  server: tuyiuoyuthgfdbf.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tuyiuoyuthgfdbf.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: tuyiuoyuthgfdbf.localip.ir
+      Host: 91.107.247.173
 - name: 🇩🇪 德国 (Germany) 03
   type: vless
-  server: 172.66.44.124
-  port: 8443
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  server: hoert1rert.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  servername: hoert1rert.localip.ir
   network: ws
   ws-opts:
-    path: /
+    path: /hokm
     headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+      Host: hoert1rert.localip.ir
 - name: 🇩🇪 德国 (Germany) 04
-  type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-  udp: true
-- name: 🇩🇪 德国 (Germany) 05
   type: vless
   server: tuyiuoyuthgfdbf.localip.ir
   port: 2087
@@ -67,6 +54,14 @@ proxies:
     path: /hokm
     headers:
       Host: tuyiuoyuthgfdbf.localip.ir
+- name: 🇩🇪 德国 (Germany) 05
+  type: vless
+  server: 2.28.232.213
+  port: 2125
+  uuid: 3430793e-837c-47f2-8c8c-a3520d4217c2
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 06
   type: vless
   server: 178.104.248.34
@@ -82,59 +77,24 @@ proxies:
     headers:
       Host: tuyiuoyuthgfdbf.localip.ir
 - name: 🇩🇪 德国 (Germany) 07
-  type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
 - name: 🇩🇪 德国 (Germany) 08
   type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
   udp: true
 - name: 🇩🇪 德国 (Germany) 09
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 10
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 11
-  type: vless
-  server: 172.67.130.187
-  port: 2053
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: FaNs.livErpoOl.qZZ.io
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZXlpMnFWRURmWkp5ZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: fans.liverpool.qzz.io
-- name: 🇩🇪 德国 (Germany) 12
   type: vless
   server: 57.129.41.216
   port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   udp: true
   tls: false
   skip-cert-verify: true
@@ -142,119 +102,8 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: 57.129.41.216
-- name: 🇩🇪 德国 (Germany) 13
-  type: vless
-  server: 178.104.248.34
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tuyiuoyuthgfdbf.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: tuyiuoyuthgfdbf.localip.ir
-- name: 🇩🇪 德国 (Germany) 14
-  type: vless
-  server: 2.28.232.213
-  port: 2125
-  uuid: 3430793e-837c-47f2-8c8c-a3520d4217c2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 15
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 16
-  type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 17
-  type: vless
-  server: tuyiuoyuthgfdbf.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tuyiuoyuthgfdbf.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: tuyiuoyuthgfdbf.localip.ir
-- name: 🇩🇪 德国 (Germany) 18
-  type: vless
-  server: 46.225.46.136
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hoert1rert.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 19
-  type: vless
-  server: 46.225.46.136
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hoert1rert.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 20
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 21
-  type: vless
-  server: hoert1rert.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hoert1rert.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 22
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 10
   type: vless
   server: sino.bestsellers1.site
   port: 2083
@@ -268,151 +117,7 @@ proxies:
     path: /
     headers:
       Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 23
-  type: ss
-  server: 213.202.208.199
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇩🇪 德国 (Germany) 24
-  type: vless
-  server: 94.103.168.133
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert6.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert6.localip.ir
-- name: 🇩🇪 德国 (Germany) 25
-  type: vless
-  server: fert6.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert6.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert6.localip.ir
-- name: 🇩🇪 德国 (Germany) 26
-  type: vless
-  server: 94.103.168.133
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert6.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert6.localip.ir
-- name: 🇩🇪 德国 (Germany) 27
-  type: vless
-  server: 94.103.168.133
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert6.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert6.localip.ir
-- name: 🇩🇪 德国 (Germany) 28
-  type: vless
-  server: 94.103.168.58
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stop.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: stop.localip.ir
-- name: 🇩🇪 德国 (Germany) 29
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 30
-  type: vless
-  server: 94.103.168.54
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert3retujnbc.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert3retujnbc.localip.ir
-- name: 🇩🇪 德国 (Germany) 31
-  type: vless
-  server: fert3retujnbc.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert3retujnbc.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert3retujnbc.localip.ir
-- name: 🇩🇪 德国 (Germany) 32
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 33
-  type: vless
-  server: 104.18.0.181
-  port: 2052
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
-- name: 🇩🇪 德国 (Germany) 34
+- name: 🇩🇪 德国 (Germany) 11
   type: vless
   server: hikvision-plus.com
   port: 2052
@@ -425,281 +130,28 @@ proxies:
     path: /@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 35
-  type: vless
-  server: uwu.blueknightnet.qzz.io
-  port: 2052
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+- name: 🇩🇪 德国 (Germany) 12
+  type: ss
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 36
+- name: 🇩🇪 德国 (Germany) 13
   type: vless
-  server: 104.21.65.43
-  port: 2052
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 37
-  type: vless
-  server: ops4asfseretuiyk.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ops4asfseretuiyk.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: ops4asfseretuiyk.localip.ir
-- name: 🇩🇪 德国 (Germany) 38
-  type: vless
-  server: 94.103.168.48
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ops4asfseretuiyk.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: ops4asfseretuiyk.localip.ir
-- name: 🇩🇪 德国 (Germany) 39
-  type: vless
-  server: ops4asfseretuiyk.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ops4asfseretuiyk.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: ops4asfseretuiyk.localip.ir
-- name: 🇩🇪 德国 (Germany) 40
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 41
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 42
-  type: vless
-  server: 2.28.232.213
-  port: 2125
-  uuid: 3430793e-837c-47f2-8c8c-a3520d4217c2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 43
-  type: vless
-  server: 94.103.168.52
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert1qswdfegrthy.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert1qswdfegrthy.localip.ir
-- name: 🇩🇪 德国 (Germany) 44
-  type: vless
-  server: fert1qswdfegrthy.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert1qswdfegrthy.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert1qswdfegrthy.localip.ir
-- name: 🇩🇪 德国 (Germany) 45
-  type: vless
-  server: ops5788tugfuy.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ops5788tugfuy.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: ops5788tugfuy.localip.ir
-- name: 🇩🇪 德国 (Germany) 46
-  type: vless
-  server: ops5788tugfuy.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ops5788tugfuy.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: ops5788tugfuy.localip.ir
-- name: 🇩🇪 德国 (Germany) 47
-  type: vless
-  server: 94.103.168.219
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ops5788tugfuy.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: ops5788tugfuy.localip.ir
-- name: 🇩🇪 德国 (Germany) 48
-  type: vless
-  server: 94.103.168.219
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ops5788tugfuy.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: ops5788tugfuy.localip.ir
-- name: 🇩🇪 德国 (Germany) 49
-  type: vless
-  server: 94.103.168.219
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ops5788tugfuy.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: ops5788tugfuy.localip.ir
-- name: 🇩🇪 德国 (Germany) 50
-  type: vless
-  server: stop.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stop.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: stop.localip.ir
-- name: 🇩🇪 德国 (Germany) 51
-  type: vmess
-  server: 178.105.168.171
-  port: 2110
-  uuid: 06d4d001-4168-4876-9416-7caecf578f40
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 52
-  type: vless
-  server: 157.230.101.36
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇩🇪 德国 (Germany) 53
-  type: vless
-  server: 46.101.253.244
+  server: sino.bestsellers1.site
   port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edge.yzkvm.top
+  servername: sino.bestsellers1.site
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: edge.yzkvm.top
-- name: 🇩🇪 德国 (Germany) 54
-  type: vless
-  server: 167.172.165.106
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edge.yzkvm.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
-- name: 🇩🇪 德国 (Germany) 55
-  type: vless
-  server: 2.28.232.213
-  port: 2125
-  uuid: 3430793e-837c-47f2-8c8c-a3520d4217c2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 56
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 14
   type: vless
   server: 178.104.248.34
   port: 2087
@@ -713,21 +165,119 @@ proxies:
     path: /hokm
     headers:
       Host: tuyiuoyuthgfdbf.localip.ir
-- name: 🇩🇪 德国 (Germany) 57
+- name: 🇩🇪 德国 (Germany) 15
   type: vless
-  server: 94.103.168.58
+  server: fert1qswdfegrthy.localip.ir
   port: 2087
   uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: stop.localip.ir
+  servername: fert1qswdfegrthy.localip.ir
   network: ws
   ws-opts:
     path: /hokm
     headers:
-      Host: stop.localip.ir
-- name: 🇩🇪 德国 (Germany) 58
+      Host: fert1qswdfegrthy.localip.ir
+- name: 🇩🇪 德国 (Germany) 16
+  type: vless
+  server: fert1qswdfegrthy.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert1qswdfegrthy.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert1qswdfegrthy.localip.ir
+- name: 🇩🇪 德国 (Germany) 17
+  type: vless
+  server: hikvision-plus.com
+  port: 2053
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uwu.blueknightnet.qzz.io
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 18
+  type: vless
+  server: 178.104.248.34
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tuyiuoyuthgfdbf.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: tuyiuoyuthgfdbf.localip.ir
+- name: 🇩🇪 德国 (Germany) 19
+  type: vless
+  server: tuyiuoyuthgfdbf.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tuyiuoyuthgfdbf.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: tuyiuoyuthgfdbf.localip.ir
+- name: 🇩🇪 德国 (Germany) 20
+  type: vless
+  server: 94.103.168.54
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert3retujnbc.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert3retujnbc.localip.ir
+- name: 🇩🇪 德国 (Germany) 21
+  type: vless
+  server: 94.103.168.52
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert1qswdfegrthy.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert1qswdfegrthy.localip.ir
+- name: 🇩🇪 德国 (Germany) 22
+  type: vless
+  server: undef.network
+  port: 2053
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uwu.blueknightnet.qzz.io
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 23
   type: vless
   server: 2.28.232.213
   port: 2125
@@ -735,17 +285,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 59
-  type: vmess
-  server: 31.76.11.83
-  port: 22266
-  uuid: 2d8f57bd-12b5-41ad-a806-6501753c264c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 60
+- name: 🇩🇪 德国 (Germany) 24
   type: vless
   server: 46.225.46.136
   port: 2087
@@ -759,7 +299,14 @@ proxies:
     path: /hokm
     headers:
       Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 61
+- name: 🇩🇪 德国 (Germany) 25
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 26
   type: vless
   server: 31.77.126.2
   port: 443
@@ -773,15 +320,149 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132
     headers:
       Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 62
+- name: 🇩🇪 德国 (Germany) 27
   type: vless
-  server: 2.28.232.213
-  port: 2125
-  uuid: 3430793e-837c-47f2-8c8c-a3520d4217c2
+  server: 172.64.150.43
+  port: 2052
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 63
+  network: ws
+  ws-opts:
+    path: /rain1226
+    headers:
+      Host: eu02.123450908.xyz
+- name: 🇩🇪 德国 (Germany) 28
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 29
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 30
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 31
+  type: vless
+  server: fert6.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert6.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert6.localip.ir
+- name: 🇩🇪 德国 (Germany) 32
+  type: vless
+  server: fert6.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert6.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert6.localip.ir
+- name: 🇩🇪 德国 (Germany) 33
+  type: vless
+  server: 94.103.168.133
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert6.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert6.localip.ir
+- name: 🇩🇪 德国 (Germany) 34
+  type: vless
+  server: 94.103.168.133
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert6.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert6.localip.ir
+- name: 🇩🇪 德国 (Germany) 35
+  type: vless
+  server: fert6.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert6.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert6.localip.ir
+- name: 🇩🇪 德国 (Germany) 36
+  type: vless
+  server: 77.221.157.213
+  port: 14430
+  uuid: 1d006ad5-1de1-4520-a5f4-875dae1b0a5d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 77.221.157.213
+- name: 🇩🇪 德国 (Germany) 37
+  type: vless
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 38
   type: vless
   server: 178.104.248.34
   port: 2087
@@ -795,23 +476,179 @@ proxies:
     path: /hokm
     headers:
       Host: tuyiuoyuthgfdbf.localip.ir
-- name: 🇩🇪 德国 (Germany) 64
-  type: vmess
-  server: 5uF8VWjSdRbqQWiu.v.3dns.vip
+- name: 🇩🇪 德国 (Germany) 39
+  type: vless
+  server: hoert1rert.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hoert1rert.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: hoert1rert.localip.ir
+- name: 🇩🇪 德国 (Germany) 40
+  type: vless
+  server: 199.232.78.128
   port: 443
-  uuid: a9f4de8b-68f1-44b6-b6a2-1db60940503a
+  uuid: 37857ebf-94bb-49a0-8ab9-548e64e57311
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: google.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: azdddaiji5.global.ssl.fastly.net.
+- name: 🇩🇪 德国 (Germany) 41
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 42
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇩🇪 德国 (Germany) 43
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 44
+  type: vless
+  server: fert3retujnbc.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert3retujnbc.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert3retujnbc.localip.ir
+- name: 🇩🇪 德国 (Germany) 45
+  type: vless
+  server: 178.104.248.34
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tuyiuoyuthgfdbf.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: tuyiuoyuthgfdbf.localip.ir
+- name: 🇩🇪 德国 (Germany) 46
+  type: vless
+  server: fert6.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert6.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert6.localip.ir
+- name: 🇩🇪 德国 (Germany) 47
+  type: vless
+  server: fert6.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert6.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert6.localip.ir
+- name: 🇩🇪 德国 (Germany) 48
+  type: vless
+  server: 157.230.101.36
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇩🇪 德国 (Germany) 49
+  type: vless
+  server: 199.232.78.128
+  port: 443
+  uuid: 37857ebf-94bb-49a0-8ab9-548e64e57311
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: google.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: azdddaiji5.global.ssl.fastly.net.
+- name: 🇩🇪 德国 (Germany) 50
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 51
+  type: vmess
+  server: 31.76.11.83
+  port: 22266
+  uuid: 2d8f57bd-12b5-41ad-a806-6501753c264c
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 5uF8VWjSdRbqQWiu.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 5uF8VWjSdRbqQWiu.v.3dns.vip
-- name: 🇩🇪 德国 (Germany) 65
+- name: 🇩🇪 德国 (Germany) 52
+  type: vmess
+  server: 31.76.11.83
+  port: 22266
+  uuid: 2d8f57bd-12b5-41ad-a806-6501753c264c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 53
   type: vless
   server: 94.103.168.48
   port: 2087
@@ -825,21 +662,7 @@ proxies:
     path: /hokm
     headers:
       Host: ops4asfseretuiyk.localip.ir
-- name: 🇩🇪 德国 (Germany) 66
-  type: vless
-  server: 94.103.168.48
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ops4asfseretuiyk.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: ops4asfseretuiyk.localip.ir
-- name: 🇩🇪 德国 (Germany) 67
+- name: 🇩🇪 德国 (Germany) 54
   type: vless
   server: ops4asfseretuiyk.localip.ir
   port: 2087
@@ -853,77 +676,21 @@ proxies:
     path: /hokm
     headers:
       Host: ops4asfseretuiyk.localip.ir
-- name: 🇩🇪 德国 (Germany) 68
+- name: 🇩🇪 德国 (Germany) 55
   type: vless
-  server: hoert1rert.localip.ir
+  server: ops5788tugfuy.localip.ir
   port: 2087
   uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hoert1rert.localip.ir
+  servername: ops5788tugfuy.localip.ir
   network: ws
   ws-opts:
     path: /hokm
     headers:
-      Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 69
-  type: vless
-  server: fert6.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert6.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert6.localip.ir
-- name: 🇩🇪 德国 (Germany) 70
-  type: vless
-  server: fert6.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert6.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert6.localip.ir
-- name: 🇩🇪 德国 (Germany) 71
-  type: vless
-  server: fert6.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert6.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert6.localip.ir
-- name: 🇩🇪 德国 (Germany) 72
-  type: vless
-  server: 167.172.165.106
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edge.yzkvm.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
-- name: 🇩🇪 德国 (Germany) 73
+      Host: ops5788tugfuy.localip.ir
+- name: 🇩🇪 德国 (Germany) 56
   type: vless
   server: 94.103.168.219
   port: 2087
@@ -937,7 +704,21 @@ proxies:
     path: /hokm
     headers:
       Host: ops5788tugfuy.localip.ir
-- name: 🇩🇪 德国 (Germany) 74
+- name: 🇩🇪 德国 (Germany) 57
+  type: vless
+  server: 94.103.168.219
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ops5788tugfuy.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: ops5788tugfuy.localip.ir
+- name: 🇩🇪 德国 (Germany) 58
   type: vless
   server: ops5788tugfuy.localip.ir
   port: 2087
@@ -951,18 +732,49 @@ proxies:
     path: /hokm
     headers:
       Host: ops5788tugfuy.localip.ir
-- name: 🇩🇪 德国 (Germany) 75
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇩🇪 德国 (Germany) 76
+- name: 🇩🇪 德国 (Germany) 59
   type: vless
-  server: ov-germany1.09vpn.com
+  server: 178.104.248.34
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tuyiuoyuthgfdbf.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: tuyiuoyuthgfdbf.localip.ir
+- name: 🇩🇪 德国 (Germany) 60
+  type: vless
+  server: 2.28.232.213
+  port: 2125
+  uuid: 3430793e-837c-47f2-8c8c-a3520d4217c2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 61
+  type: vless
+  server: 2.28.232.213
+  port: 2125
+  uuid: 3430793e-837c-47f2-8c8c-a3520d4217c2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 62
+  type: vless
+  server: 2.28.232.213
+  port: 2125
+  uuid: 3430793e-837c-47f2-8c8c-a3520d4217c2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 63
+  type: vless
+  server: 57.129.41.216
   port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   udp: true
   tls: false
   skip-cert-verify: true
@@ -970,24 +782,31 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 77
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 64
   type: vless
-  server: hikvision-plus.com
-  port: 2053
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  server: 178.104.248.34
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: uwu.blueknightnet.qzz.io
+  servername: tuyiuoyuthgfdbf.localip.ir
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    path: /hokm
     headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 78
+      Host: tuyiuoyuthgfdbf.localip.ir
+- name: 🇩🇪 德国 (Germany) 65
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 66
   type: vless
-  server: hoert1rert.localip.ir
+  server: 46.225.46.136
   port: 2087
   uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
   udp: true
@@ -999,7 +818,31 @@ proxies:
     path: /hokm
     headers:
       Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 79
+- name: 🇩🇪 德国 (Germany) 67
+  type: vless
+  server: 94.103.168.133
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert6.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert6.localip.ir
+- name: 🇩🇪 德国 (Germany) 68
+  type: vmess
+  server: 31.76.11.83
+  port: 22266
+  uuid: 2d8f57bd-12b5-41ad-a806-6501753c264c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 69
   type: vless
   server: 94.103.168.52
   port: 2087
@@ -1013,112 +856,21 @@ proxies:
     path: /hokm
     headers:
       Host: fert1qswdfegrthy.localip.ir
-- name: 🇩🇪 德国 (Germany) 80
+- name: 🇩🇪 德国 (Germany) 70
   type: vless
-  server: fert6.localip.ir
+  server: 94.103.168.219
   port: 2087
   uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fert6.localip.ir
+  servername: ops5788tugfuy.localip.ir
   network: ws
   ws-opts:
     path: /hokm
     headers:
-      Host: fert6.localip.ir
-- name: 🇩🇪 德国 (Germany) 81
-  type: vless
-  server: 104.21.5.128
-  port: 2052
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 82
-  type: vless
-  server: fert1qswdfegrthy.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert1qswdfegrthy.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert1qswdfegrthy.localip.ir
-- name: 🇩🇪 德国 (Germany) 83
-  type: vless
-  server: 94.103.168.54
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert3retujnbc.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert3retujnbc.localip.ir
-- name: 🇩🇪 德国 (Germany) 84
-  type: vless
-  server: 104.21.93.52
-  port: 2052
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 85
-  type: ss
-  server: 213.202.208.199
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇩🇪 德国 (Germany) 86
-  type: vmess
-  server: uk2-2.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: server3.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /waetasiuofguiwer
-    headers:
-      Host: server3.9966338.xyz
-- name: 🇩🇪 德国 (Germany) 87
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 70008803-ed47-4181-bf10-dc8f5362f42d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.benyamin-benshop.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: a.benyamin-benshop.ir
-- name: 🇩🇪 德国 (Germany) 88
+      Host: ops5788tugfuy.localip.ir
+- name: 🇩🇪 德国 (Germany) 71
   type: vless
   server: ops5788tugfuy.localip.ir
   port: 2087
@@ -1132,7 +884,7 @@ proxies:
     path: /hokm
     headers:
       Host: ops5788tugfuy.localip.ir
-- name: 🇩🇪 德国 (Germany) 89
+- name: 🇩🇪 德国 (Germany) 72
   type: vless
   server: 94.103.168.54
   port: 2087
@@ -1146,36 +898,6 @@ proxies:
     path: /hokm
     headers:
       Host: fert3retujnbc.localip.ir
-- name: 🇩🇪 德国 (Germany) 90
-  type: vmess
-  server: 31.76.11.83
-  port: 22266
-  uuid: 2d8f57bd-12b5-41ad-a806-6501753c264c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 91
-  type: vmess
-  server: 31.76.11.83
-  port: 22266
-  uuid: 2d8f57bd-12b5-41ad-a806-6501753c264c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 92
-  type: vmess
-  server: 31.76.11.83
-  port: 22266
-  uuid: 2d8f57bd-12b5-41ad-a806-6501753c264c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1253,26 +975,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 70
   - 🇩🇪 德国 (Germany) 71
   - 🇩🇪 德国 (Germany) 72
-  - 🇩🇪 德国 (Germany) 73
-  - 🇩🇪 德国 (Germany) 74
-  - 🇩🇪 德国 (Germany) 75
-  - 🇩🇪 德国 (Germany) 76
-  - 🇩🇪 德国 (Germany) 77
-  - 🇩🇪 德国 (Germany) 78
-  - 🇩🇪 德国 (Germany) 79
-  - 🇩🇪 德国 (Germany) 80
-  - 🇩🇪 德国 (Germany) 81
-  - 🇩🇪 德国 (Germany) 82
-  - 🇩🇪 德国 (Germany) 83
-  - 🇩🇪 德国 (Germany) 84
-  - 🇩🇪 德国 (Germany) 85
-  - 🇩🇪 德国 (Germany) 86
-  - 🇩🇪 德国 (Germany) 87
-  - 🇩🇪 德国 (Germany) 88
-  - 🇩🇪 德国 (Germany) 89
-  - 🇩🇪 德国 (Germany) 90
-  - 🇩🇪 德国 (Germany) 91
-  - 🇩🇪 德国 (Germany) 92
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1350,25 +1052,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 70
   - 🇩🇪 德国 (Germany) 71
   - 🇩🇪 德国 (Germany) 72
-  - 🇩🇪 德国 (Germany) 73
-  - 🇩🇪 德国 (Germany) 74
-  - 🇩🇪 德国 (Germany) 75
-  - 🇩🇪 德国 (Germany) 76
-  - 🇩🇪 德国 (Germany) 77
-  - 🇩🇪 德国 (Germany) 78
-  - 🇩🇪 德国 (Germany) 79
-  - 🇩🇪 德国 (Germany) 80
-  - 🇩🇪 德国 (Germany) 81
-  - 🇩🇪 德国 (Germany) 82
-  - 🇩🇪 德国 (Germany) 83
-  - 🇩🇪 德国 (Germany) 84
-  - 🇩🇪 德国 (Germany) 85
-  - 🇩🇪 德国 (Germany) 86
-  - 🇩🇪 德国 (Germany) 87
-  - 🇩🇪 德国 (Germany) 88
-  - 🇩🇪 德国 (Germany) 89
-  - 🇩🇪 德国 (Germany) 90
-  - 🇩🇪 德国 (Germany) 91
-  - 🇩🇪 德国 (Germany) 92
 rules:
 - MATCH,PROXIES
