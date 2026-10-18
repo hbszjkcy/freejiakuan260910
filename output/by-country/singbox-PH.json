@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇵🇭 PH 01",
+        "🇵🇭 PH 02",
+        "🇵🇭 PH 03",
+        "🇵🇭 PH 04",
+        "🇵🇭 PH 05",
+        "🇵🇭 PH 06",
+        "🇵🇭 PH 07",
+        "🇵🇭 PH 08",
+        "🇵🇭 PH 09",
+        "🇵🇭 PH 10",
+        "🇵🇭 PH 11",
+        "🇵🇭 PH 12"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇵🇭 PH 01",
+        "🇵🇭 PH 02",
+        "🇵🇭 PH 03",
+        "🇵🇭 PH 04",
+        "🇵🇭 PH 05",
+        "🇵🇭 PH 06",
+        "🇵🇭 PH 07",
+        "🇵🇭 PH 08",
+        "🇵🇭 PH 09",
+        "🇵🇭 PH 10",
+        "🇵🇭 PH 11",
+        "🇵🇭 PH 12"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
