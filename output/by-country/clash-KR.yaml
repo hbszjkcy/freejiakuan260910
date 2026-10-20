@@ -12,16 +12,6 @@ proxies:
   password: Y6R9pAtvxxzmGC
   udp: true
 - name: 🇰🇷 韩国 (South Korea) 02
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 03
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -33,6 +23,16 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 03
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 04
   type: vless
   server: 151.245.106.49
@@ -44,7 +44,7 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 05
   type: ss
   server: 141.164.45.187
@@ -53,16 +53,6 @@ proxies:
   password: TEzjfAYq2IjtuoS
   udp: true
 - name: 🇰🇷 韩国 (South Korea) 06
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07
   type: ss
   server: 141.164.45.187
   port: 5498
@@ -80,7 +70,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04
   - 🇰🇷 韩国 (South Korea) 05
   - 🇰🇷 韩国 (South Korea) 06
-  - 🇰🇷 韩国 (South Korea) 07
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,6 +81,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04
   - 🇰🇷 韩国 (South Korea) 05
   - 🇰🇷 韩国 (South Korea) 06
-  - 🇰🇷 韩国 (South Korea) 07
 rules:
 - MATCH,PROXIES
