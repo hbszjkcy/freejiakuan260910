@@ -6,44 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 AT 01",
-        "🇦🇹 AT 02",
-        "🇦🇹 AT 03",
-        "🇦🇹 AT 04",
-        "🇦🇹 AT 05",
-        "🇦🇹 AT 06",
-        "🇦🇹 AT 07",
-        "🇦🇹 AT 08",
-        "🇦🇹 AT 09",
-        "🇦🇹 AT 10",
-        "🇦🇹 AT 11",
-        "🇦🇹 AT 12",
-        "🇦🇹 AT 13",
-        "🇦🇹 AT 14",
-        "🇦🇹 AT 15",
-        "🇦🇹 AT 16"
+        "🇦🇹 AT 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 AT 01",
-        "🇦🇹 AT 02",
-        "🇦🇹 AT 03",
-        "🇦🇹 AT 04",
-        "🇦🇹 AT 05",
-        "🇦🇹 AT 06",
-        "🇦🇹 AT 07",
-        "🇦🇹 AT 08",
-        "🇦🇹 AT 09",
-        "🇦🇹 AT 10",
-        "🇦🇹 AT 11",
-        "🇦🇹 AT 12",
-        "🇦🇹 AT 13",
-        "🇦🇹 AT 14",
-        "🇦🇹 AT 15",
-        "🇦🇹 AT 16"
+        "🇦🇹 AT 01"
       ],
       "url": "https://www.google.com/generate_204"
     },
