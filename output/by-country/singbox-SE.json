@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇸🇪 SE 01",
+        "🇸🇪 SE 02",
+        "🇸🇪 SE 03",
+        "🇸🇪 SE 04",
+        "🇸🇪 SE 05",
+        "🇸🇪 SE 06",
+        "🇸🇪 SE 07",
+        "🇸🇪 SE 08",
+        "🇸🇪 SE 09",
+        "🇸🇪 SE 10",
+        "🇸🇪 SE 11",
+        "🇸🇪 SE 12",
+        "🇸🇪 SE 13",
+        "🇸🇪 SE 14",
+        "🇸🇪 SE 15",
+        "🇸🇪 SE 16",
+        "🇸🇪 SE 17",
+        "🇸🇪 SE 18",
+        "🇸🇪 SE 19",
+        "🇸🇪 SE 20",
+        "🇸🇪 SE 21",
+        "🇸🇪 SE 22",
+        "🇸🇪 SE 23",
+        "🇸🇪 SE 24",
+        "🇸🇪 SE 25",
+        "🇸🇪 SE 26",
+        "🇸🇪 SE 27",
+        "🇸🇪 SE 28"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇸🇪 SE 01",
+        "🇸🇪 SE 02",
+        "🇸🇪 SE 03",
+        "🇸🇪 SE 04",
+        "🇸🇪 SE 05",
+        "🇸🇪 SE 06",
+        "🇸🇪 SE 07",
+        "🇸🇪 SE 08",
+        "🇸🇪 SE 09",
+        "🇸🇪 SE 10",
+        "🇸🇪 SE 11",
+        "🇸🇪 SE 12",
+        "🇸🇪 SE 13",
+        "🇸🇪 SE 14",
+        "🇸🇪 SE 15",
+        "🇸🇪 SE 16",
+        "🇸🇪 SE 17",
+        "🇸🇪 SE 18",
+        "🇸🇪 SE 19",
+        "🇸🇪 SE 20",
+        "🇸🇪 SE 21",
+        "🇸🇪 SE 22",
+        "🇸🇪 SE 23",
+        "🇸🇪 SE 24",
+        "🇸🇪 SE 25",
+        "🇸🇪 SE 26",
+        "🇸🇪 SE 27",
+        "🇸🇪 SE 28"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
