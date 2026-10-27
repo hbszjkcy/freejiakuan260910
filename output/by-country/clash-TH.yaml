@@ -15,7 +15,7 @@ proxies:
   servername: th001.zestapp778.com
 - name: 🇹🇭 TH 02
   type: vless
-  server: th001.zestapp778.com
+  server: 38.60.254.50
   port: 22222
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -49,28 +49,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: th001.zestapp778.com
-- name: 🇹🇭 TH 06
-  type: vless
-  server: 38.60.254.50
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
-- name: 🇹🇭 TH 07
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,8 +59,6 @@ proxy-groups:
   - 🇹🇭 TH 03
   - 🇹🇭 TH 04
   - 🇹🇭 TH 05
-  - 🇹🇭 TH 06
-  - 🇹🇭 TH 07
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -93,7 +69,5 @@ proxy-groups:
   - 🇹🇭 TH 03
   - 🇹🇭 TH 04
   - 🇹🇭 TH 05
-  - 🇹🇭 TH 06
-  - 🇹🇭 TH 07
 rules:
 - MATCH,PROXIES
