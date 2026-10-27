@@ -19,19 +19,6 @@ proxies:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 02
   type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 03
-  type: vless
   server: 77.110.97.245
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -44,26 +31,6 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇸🇪 SE 04
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 05
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,9 +38,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01
   - 🇸🇪 SE 02
-  - 🇸🇪 SE 03
-  - 🇸🇪 SE 04
-  - 🇸🇪 SE 05
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,8 +45,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01
   - 🇸🇪 SE 02
-  - 🇸🇪 SE 03
-  - 🇸🇪 SE 04
-  - 🇸🇪 SE 05
 rules:
 - MATCH,PROXIES
