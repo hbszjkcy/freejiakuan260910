@@ -6,51 +6,20 @@ log-level: info
 proxies:
 - name: 🇷🇴 RO 01
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 02
-  type: vless
   server: 155.117.5.208
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇷🇴 RO 03
-  type: ss
-  server: 194.68.44.42
-  port: 64546
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
-  udp: true
-- name: 🇷🇴 RO 04
-  type: vless
-  server: 178.83.45.226
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 05
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 06
+- name: 🇷🇴 RO 02
   type: ss
   server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-- name: 🇷🇴 RO 07
+- name: 🇷🇴 RO 03
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -58,6 +27,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇷🇴 RO 04
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 05
+  type: ss
+  server: 194.68.44.42
+  port: 64546
+  cipher: chacha20-ietf-poly1305
+  password: U83u9OGpvSatIUW7LsWffr
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,8 +52,6 @@ proxy-groups:
   - 🇷🇴 RO 03
   - 🇷🇴 RO 04
   - 🇷🇴 RO 05
-  - 🇷🇴 RO 06
-  - 🇷🇴 RO 07
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -80,7 +62,5 @@ proxy-groups:
   - 🇷🇴 RO 03
   - 🇷🇴 RO 04
   - 🇷🇴 RO 05
-  - 🇷🇴 RO 06
-  - 🇷🇴 RO 07
 rules:
 - MATCH,PROXIES
