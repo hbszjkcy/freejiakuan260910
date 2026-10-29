@@ -6,26 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 ID 01",
-        "🇮🇩 ID 02",
-        "🇮🇩 ID 03",
-        "🇮🇩 ID 04",
-        "🇮🇩 ID 05",
-        "🇮🇩 ID 06",
-        "🇮🇩 ID 07"
+        "🇵🇭 PH 01",
+        "🇵🇭 PH 02",
+        "🇵🇭 PH 03",
+        "🇵🇭 PH 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 ID 01",
-        "🇮🇩 ID 02",
-        "🇮🇩 ID 03",
-        "🇮🇩 ID 04",
-        "🇮🇩 ID 05",
-        "🇮🇩 ID 06",
-        "🇮🇩 ID 07"
+        "🇵🇭 PH 01",
+        "🇵🇭 PH 02",
+        "🇵🇭 PH 03",
+        "🇵🇭 PH 04"
       ],
       "url": "https://www.google.com/generate_204"
     },
