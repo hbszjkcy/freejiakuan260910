@@ -25,8 +25,17 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 194.104.94.141
+  servername: se3.shtil.io
 - name: 🇸🇪 SE 03
+  type: vless
+  server: 194.104.94.141
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
+- name: 🇸🇪 SE 04
   type: vless
   server: se3.shtil.io
   port: 443
@@ -43,6 +52,7 @@ proxy-groups:
   - 🇸🇪 SE 01
   - 🇸🇪 SE 02
   - 🇸🇪 SE 03
+  - 🇸🇪 SE 04
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,5 +61,6 @@ proxy-groups:
   - 🇸🇪 SE 01
   - 🇸🇪 SE 02
   - 🇸🇪 SE 03
+  - 🇸🇪 SE 04
 rules:
 - MATCH,PROXIES
