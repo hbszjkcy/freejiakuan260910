@@ -6,6 +6,53 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01
   type: vless
+  server: 15.236.109.186
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 02
+  type: ss
+  server: pl140.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  udp: true
+- name: 🇫🇷 法国 (France) 03
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 04
+  type: vless
+  server: 138.124.70.41
+  port: 14430
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 05
+  type: ss
+  server: pl134.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  udp: true
+- name: 🇫🇷 法国 (France) 06
+  type: vless
   server: 51.77.217.70
   port: 2053
   uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
@@ -15,15 +62,53 @@ proxies:
   reality-opts:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 02
-  type: ss
-  server: 54.36.174.140
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 07
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇫🇷 法国 (France) 03
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 08
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 09
+  type: vless
+  server: 178.104.70.11
+  port: 443
+  uuid: 64726966-0000-4000-8000-740000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  network: ws
+  ws-opts:
+    path: /fp=firefox
+    headers:
+      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
+- name: 🇫🇷 法国 (France) 10
+  type: vless
+  server: w.geogame.ir
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
+- name: 🇫🇷 法国 (France) 11
   type: vless
   server: ov-france1.09vpn.com
   port: 80
@@ -36,49 +121,33 @@ proxies:
     path: /vless/
     headers:
       Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 04
+- name: 🇫🇷 法国 (France) 12
   type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  server: m.cnmjin.net
+  port: 16644
+  uuid: 545ee947-78b4-4c47-9c01-7a1d983273f8
   alterId: 0
   cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 05
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 06
+      Host: 8b6efbd394b2946b0781661c2a1ba8f1.mobgslb.tbcache.com
+- name: 🇫🇷 法国 (France) 13
   type: vmess
-  server: 141.95.65.9
-  port: 1234
+  server: 46.105.222.155
+  port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 07
-  type: ss
-  server: pl134.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-  udp: true
-- name: 🇫🇷 法国 (France) 08
+  servername: None
+- name: 🇫🇷 法国 (France) 14
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -90,57 +159,27 @@ proxies:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 09
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 10
+- name: 🇫🇷 法国 (France) 15
   type: ss
   server: 54.36.174.134
   port: 443
   cipher: chacha20-ietf-poly1305
   password: 6heexyz
   udp: true
-- name: 🇫🇷 法国 (France) 11
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 12
-  type: vless
-  server: 15.236.109.186
-  port: 2053
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: w.geogame.ir
-- name: 🇫🇷 法国 (France) 13
-  type: vless
-  server: 15.236.109.186
-  port: 2053
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: w.geogame.ir
-- name: 🇫🇷 法国 (France) 14
+- name: 🇫🇷 法国 (France) 16
   type: vmess
-  server: 162.19.204.71
+  server: 46.105.222.157
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: None
+- name: 🇫🇷 法国 (France) 17
+  type: vmess
+  server: 141.95.65.9
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -149,65 +188,33 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 15
-  type: vless
-  server: w.geogame.ir
-  port: 2053
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: w.geogame.ir
-- name: 🇫🇷 法国 (France) 16
+- name: 🇫🇷 法国 (France) 18
   type: ss
-  server: 79.137.99.183
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 17
-  type: ss
-  server: pl140.vpnbook.com
+  server: 54.36.174.140
   port: 443
   cipher: chacha20-ietf-poly1305
   password: 6heexyz
   udp: true
-- name: 🇫🇷 法国 (France) 18
-  type: vless
-  server: 138.124.70.41
-  port: 14430
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
 - name: 🇫🇷 法国 (France) 19
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 20
   type: vmess
-  server: 162.19.204.71
-  port: 1234
+  server: 79.137.99.183
+  port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: None
+- name: 🇫🇷 法国 (France) 20
+  type: vless
+  server: 15.236.109.186
+  port: 2053
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: w.geogame.ir
 - name: 🇫🇷 法国 (France) 21
   type: vmess
   server: 141.95.65.9
@@ -219,6 +226,54 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇫🇷 法国 (France) 22
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 23
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 24
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 25
+  type: vless
+  server: 138.124.70.41
+  port: 14430
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
 proxy-groups:
 - name: PROXIES
   type: select
@@ -245,6 +300,10 @@ proxy-groups:
   - 🇫🇷 法国 (France) 19
   - 🇫🇷 法国 (France) 20
   - 🇫🇷 法国 (France) 21
+  - 🇫🇷 法国 (France) 22
+  - 🇫🇷 法国 (France) 23
+  - 🇫🇷 法国 (France) 24
+  - 🇫🇷 法国 (France) 25
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -271,5 +330,9 @@ proxy-groups:
   - 🇫🇷 法国 (France) 19
   - 🇫🇷 法国 (France) 20
   - 🇫🇷 法国 (France) 21
+  - 🇫🇷 法国 (France) 22
+  - 🇫🇷 法国 (France) 23
+  - 🇫🇷 法国 (France) 24
+  - 🇫🇷 法国 (France) 25
 rules:
 - MATCH,PROXIES
