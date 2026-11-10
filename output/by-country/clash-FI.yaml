@@ -60,18 +60,18 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 05
   type: vless
-  server: 146.103.118.189
+  server: 109.120.134.181
   port: 443
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nl2.574ck.xyz
+  servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /574ck-finland
+    path: /fp=chrome
     headers:
-      Host: nl2.574ck.xyz
+      Host: fs.qicai99.com
 - name: 🇫🇮 FI 06
   type: vless
   server: 45.144.234.157
