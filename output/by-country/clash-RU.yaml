@@ -13,39 +13,41 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02
   type: vless
-  server: 185.178.208.167
+  server: 176.108.245.237
   port: 443
-  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
+  uuid: 87c35d3a-36f1-fade-90b7-af60506efbb8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mbr.rkn-pediki.site
-  network: ws
-  ws-opts:
-    path: /session
-    headers:
-      Host: mbr.rkn-pediki.site
+  servername: tfusq-ru-40sb.fade.mom
 - name: 🇷🇺 俄罗斯 (Russia) 03
   type: vless
-  server: 185.178.208.167
+  server: 185.86.147.175
   port: 443
-  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
+  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mbr.rkn-pediki.site
+  servername: bhjolq0d0l.flowersgood.top
   network: ws
   ws-opts:
-    path: /session
+    path: /service/telemetry/045d381f1166/
     headers:
-      Host: mbr.rkn-pediki.site
+      Host: bhjolq0d0l.flowersgood.top
 - name: 🇷🇺 俄罗斯 (Russia) 04
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  type: vless
+  server: bhjolq0d0l.flowersgood.top
+  port: 443
+  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bhjolq0d0l.flowersgood.top
+  network: ws
+  ws-opts:
+    path: /service/telemetry/045d381f1166/
+    headers:
+      Host: bhjolq0d0l.flowersgood.top
 - name: 🇷🇺 俄罗斯 (Russia) 05
   type: ss
   server: 46.17.47.58
