@@ -5,27 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01
-  type: vless
-  server: 193.219.97.198
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
-- name: 🇦🇹 AT 02
   type: ss
   server: 82.110.60.9
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇦🇹 AT 03
+- name: 🇦🇹 AT 02
   type: vmess
   server: 154.47.19.225
   port: 1270
@@ -36,12 +22,19 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇦🇹 AT 04
+- name: 🇦🇹 AT 03
   type: ss
   server: 152.53.1.57
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
+  udp: true
+- name: 🇦🇹 AT 04
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇦🇹 AT 05
   type: vless
@@ -57,13 +50,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: fs.qicai99.com
-- name: 🇦🇹 AT 06
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,7 +60,6 @@ proxy-groups:
   - 🇦🇹 AT 03
   - 🇦🇹 AT 04
   - 🇦🇹 AT 05
-  - 🇦🇹 AT 06
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -85,6 +70,5 @@ proxy-groups:
   - 🇦🇹 AT 03
   - 🇦🇹 AT 04
   - 🇦🇹 AT 05
-  - 🇦🇹 AT 06
 rules:
 - MATCH,PROXIES
