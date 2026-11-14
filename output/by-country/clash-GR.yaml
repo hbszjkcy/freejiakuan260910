@@ -4,24 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 RO 01
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
+- name: 🇬🇷 GR 01
+  type: vless
+  server: 85.90.197.158
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fs.qicai99.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 RO 01
+  - 🇬🇷 GR 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 RO 01
+  - 🇬🇷 GR 01
 rules:
 - MATCH,PROXIES
