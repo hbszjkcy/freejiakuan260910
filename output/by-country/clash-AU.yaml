@@ -4,26 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01
+- name: 🇦🇺 澳大利亚 (Australia) 01
   type: vless
-  server: 87.248.149.50
+  server: 104.18.155.229
   port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
+  servername: www.genflix.co.id.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /au-do
+    headers:
+      Host: www.genflix.co.id.r3xxe.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01
+  - 🇦🇺 澳大利亚 (Australia) 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01
+  - 🇦🇺 澳大利亚 (Australia) 01
 rules:
 - MATCH,PROXIES
