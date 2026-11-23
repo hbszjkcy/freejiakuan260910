@@ -80,20 +80,6 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 07
-  type: vless
-  server: 168.107.36.135
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇰🇷 韩国 (South Korea) 08
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -103,7 +89,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09
+- name: 🇰🇷 韩国 (South Korea) 08
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -129,7 +115,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06
   - 🇰🇷 韩国 (South Korea) 07
   - 🇰🇷 韩国 (South Korea) 08
-  - 🇰🇷 韩国 (South Korea) 09
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -143,6 +128,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06
   - 🇰🇷 韩国 (South Korea) 07
   - 🇰🇷 韩国 (South Korea) 08
-  - 🇰🇷 韩国 (South Korea) 09
 rules:
 - MATCH,PROXIES
