@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 BR 01"
+        "🇧🇷 BR 01",
+        "🇧🇷 BR 02",
+        "🇧🇷 BR 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 BR 01"
+        "🇧🇷 BR 01",
+        "🇧🇷 BR 02",
+        "🇧🇷 BR 03"
       ],
       "url": "https://www.google.com/generate_204"
     },
